@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "fn": "workspace:*",
+    "jest": "^26.2.2",
+    "jest-circus": "^26.2.2",
+    "prettier": "^2.0.5",
+    "webpack": "^4.44.1",
+    "webpack.next": "npm:webpack@^5.0.0-beta.22"
+  },
+  "scripts": {
+    "test": "node scripts/test.js",
+    "test:webpack-5": "WEBPACK_VERSION=5 yarn test"
+  }
+}
